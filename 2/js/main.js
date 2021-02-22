@@ -6,8 +6,14 @@ let name = new Vue({
     },
     methods: {
         message: function() {
-            massage: this.massage
+            this.massage.push({
+
+                massage: this.massage + ' '
+      
+              })
+            this.newTodoText = ''
         }
+        
     }
 })
 
